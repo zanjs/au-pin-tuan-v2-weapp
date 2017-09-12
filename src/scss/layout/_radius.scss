@@ -1,0 +1,70 @@
+.radius {
+  &-b {
+    &_50 {
+      border-radius: 50%;
+    }
+  }
+  &_2 {
+    border-radius: 2px;
+  }
+  &_3 {
+    border-radius: 3px;
+  }
+  &_4 {
+    border-radius: 4px;
+  }
+  &_5 {
+    border-radius: 5px;
+  }
+  &_6 {
+    border-radius: 6px;
+  }
+  &_7 {
+    border-radius: 7px;
+  }
+  &_8 {
+    border-radius: 8px;
+  }
+  &_9 {
+    border-radius: 9px;
+  }
+  &_10 {
+    border-radius: 10px;
+  }
+  &-left {
+    &_5 {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &_6 {
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    &_7 {
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+    &_11 {
+      border-top-left-radius: 11px;
+      border-bottom-left-radius: 11px;
+    }
+  }
+  &-right {
+    &_5 {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    &_6 {
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    &_7 {
+      border-top-right-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }
+    &_11 {
+      border-top-right-radius: 11px;
+      border-bottom-right-radius: 11px;
+    }
+  }
+}

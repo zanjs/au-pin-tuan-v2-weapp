@@ -1,0 +1,46 @@
+// bottom
+.border-bottom {
+  &-none {
+    border-bottom: none;
+  }
+  @for $i from 0 through 8 {
+    &_#{$i} {
+      border-bottom: #{$i}px solid #ddd
+    }
+  }
+  &-ddd {
+    @for $i from 0 through 8 {
+      &_#{$i} {
+        border-bottom: #{$i}px solid #ddd
+      }
+    }
+  }
+  border-bottom: 1px solid #ddd;
+  &-e9 {
+    border-bottom: 1px solid #e9e9e9;
+    &_1 {
+      border-bottom: 1px solid #e9e9e9
+    }
+  }
+  &-ccc {
+    border-bottom: 1px solid #ccc;
+  }
+  &-ddd {
+    border-bottom: 1px solid #ddd;
+    &_1 {
+      border-bottom: 1px solid #ddd
+    }
+    &_2 {
+      border-bottom: 2px solid #ddd
+    }
+    &_3 {
+      border-bottom: 3px solid #ddd
+    }
+  }
+  &_555 {
+    border-bottom: 1px solid #555;
+    &_2 {
+      border-bottom: 2px solid #555;
+    }
+  }
+}

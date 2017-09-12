@@ -1,0 +1,23 @@
+<view class="padding-rpx_20 border-bottom-ddd_1">
+  <view class="font_16 margin-bottom_5">
+    {{item.name}}
+  </view>
+  <view class="flex-box">
+    <view class="font-rpx_30 strong w-rpx_210 color-red align-item-center flex-box">
+      {{currencyCode}}{{item.price}}
+    </view>
+    <view class="w-rpx_200 font_12 align-item-center color-ddd flex-box">
+      <text wx:if="{{item.product_quantity}}">已售{{item.product_order_count}} \n 剩余 {{item.product_quantity - item.product_order_count - item.quantity}}</text>
+      <text wx:if="{{!item.product_quantity}}">
+         已售{{item.product_order_count}} \n 不限购
+      </text>
+    </view>
+    <!--操作数量-->
+    <view class="w-rpx_300 justify-end align-item-center flex-box">
+      <button bindtap="tabPlusCut" data-bool="{{false}}" data-index="{{index}}" type="default" size="mini" hover-class="button-hover" class="iconfont icon-subtract font_30"></button>
+      <view class="">{{item.quantity}}</view>
+      <button bindtap="tabPlusCut" data-bool="{{true}}" data-index="{{index}}" type="warn" size="mini" hover-class="button-hover" class="iconfont icon-add font_30"></button>
+    </view>
+    <!--操作数量 end-->
+  </view>
+</view>

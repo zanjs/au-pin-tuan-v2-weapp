@@ -1,0 +1,39 @@
+// top
+.border-top {
+  border-top: 1px solid #ddd;
+  &-red {
+    border-top: 1px solid #FF4D6B;
+    &_2 {
+      border-top: 2px solid #FF4D6B;
+    }
+  }
+  &_0079FF {
+    border-top: 1px solid #0079ff;
+    &_3 {
+      border-top: 3px solid #0079ff;
+    }
+  }
+  &-ccc {
+    border-top: 1px solid #ccc;
+  }
+  &-ddd {
+    border-top: 1px solid #ddd;
+    &_1 {
+      border-top: 1px solid #ddd
+    }
+    &_2 {
+      border-top: 2px solid #ddd
+    }
+    &_3 {
+      border-top: 3px solid #ddd
+    }
+  }
+  &_888 {
+    &_3 {
+      border-top: 3px solid #888;
+    }
+  }
+  &_999 {
+    border-top: 1px solid #999;
+  }
+}

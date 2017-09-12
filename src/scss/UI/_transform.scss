@@ -1,0 +1,27 @@
+.transform {
+    &-rotate {
+        &_45 {
+            transform: rotate(45deg)
+        }
+    }
+}
+
+.transition {
+    &-ease-in-out {
+        &-left {
+            &_02 {
+                transition: left 0.2s ease-in-out;
+            }
+        }
+    }
+    &-all {
+        &_03 {
+            transition: all 0.3s;
+        }
+        &-ease {
+            &_03 {
+                transition: all 0.3s ease;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// 背景图标
+.bg {
+    &-icon {
+        &-order {
+            &-del {
+                display: inline-block;
+                width: 19px;
+                height: 30px; // background-color: red;
+                background: url(http://6city.mu.gg/static/img/order_del_icon.png);
+                background-repeat: no-repeat;
+                background-size: 19px 24px;
+                background-position: center bottom;
+                &-detail {
+                    display: inline-block;
+                    width: 19px;
+                    height: 24px;
+                    margin-left: 10px;
+                    margin-right: 40px;
+                    background-repeat: no-repeat;
+                    background-image: url(http://6city.mu.gg/static/img/order_detail_del.png);
+                    background-size: 19px 24px;
+                }
+            }
+        }
+    }
+    &-cart {
+        &-no {
+            background: url(http://6city.mu.gg/static/img/cart-on.png) no-repeat center center;
+            background-size: 32px 32px;
+        }
+    }
+    &-placeholder {
+        &-logo {
+            background: url("http://6city.mu.gg/static/img/placeholderImg.png")center no-repeat;
+            background-size: 50rpx 50rpx;
+        }
+    }
+    &-btn {
+        &-yi {
+            background: url("http://6city.mu.gg/static/img/btn-trans.png")center no-repeat;
+            background-size: 47rpx 47rpx;
+        }
+        &-cn {
+            background: url("http://6city.mu.gg/static/img/btn-cn.png")center no-repeat;
+            background-size: 47rpx 47rpx;
+        }
+    }
+}

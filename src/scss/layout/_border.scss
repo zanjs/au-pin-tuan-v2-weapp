@@ -1,0 +1,90 @@
+.border {
+  &-no {
+    border: none;
+  }
+  &_999 {
+    border: 1px solid #999
+  }
+  &-ce {
+    border: 1px solid #cecece
+  }
+  &-ddd {
+    @for $i from 0 through 5 {
+      &_#{$i} {
+        border: #{$i}px solid #ddd
+      }
+    }
+  }
+  &-ccc {
+    &_1 {
+      border: 1px solid #ccc
+    }
+  }
+  &-e2 {
+    &_1 {
+      border: 1px solid #e2e2e2;
+    }
+  }
+  &_0079FF {
+    border: 1px solid #0079FF;
+  }
+  &-red {
+    &_1 {
+      border: 1px solid #FF4D6B;
+    }
+  }
+  &_999 {
+    border: 1px solid #999
+  }
+  &-ce {
+    border: 1px solid #cecece
+  }
+  &-ddd {
+    &_1 {
+      border: 1px solid #ddd
+    }
+    &_2 {
+      border: 2px solid #ddd
+    }
+    &_3 {
+      border: 3px solid #ddd
+    }
+  }
+  &-ccc {
+    &_1 {
+      border: 1px solid #ccc
+    }
+  }
+  &-e2 {
+    &_1 {
+      border: 1px solid #e2e2e2;
+    }
+  }
+  &-ed {
+    &_1 {
+      border: 1px solid #ededed;
+    }
+  }
+  &_0079FF {
+    border: 1px solid #0079FF;
+  }
+}
+
+@import 'border-top';
+@import 'border-bottom';
+@import 'border-right';
+@import 'border-left';
+.last-border-true {
+  &.border-bottom-ddd_1 {
+    border-bottom: none;
+  }
+}
+
+.boder-end-wrap:last-child {
+  .border-bottom-ddd {
+    border-bottom: none;
+  }
+  &.border-bottom-ddd_1 {
+    border-bottom: none;
+  }
+}

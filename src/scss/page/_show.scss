@@ -1,0 +1,159 @@
+page {
+  max-width: 750rpx;
+  overflow-x: hidden;
+}
+
+.header-thumb {
+  width: 80px;
+  height: 80px;
+  background-color: #f2f2f2;
+  position: relative;
+  &-img {
+    width: 80px;
+    height: 80px;
+  }
+  &-status {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #FFF;
+  }
+}
+
+.bg {
+  &-warn {
+    background-color: #E64340;
+  }
+  &-primary {
+    background-color: #1AAD19;
+  }
+}
+
+.more-desc-btn {
+  color: #3FA7FF;
+}
+
+.status {
+  &-warn {
+    color: #E64340;
+    border: 1px solid #E64340;
+  }
+  &-primary {
+    color: #1AAD19;
+    border: 1px solid #1AAD19;
+  }
+}
+
+.thumb-box {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  background: #eee url("img__svg/photo-camera.svg") no-repeat center center;
+  background-size: 40px 40px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.thumb-img {
+  width: 100px;
+  height: 100px;
+}
+
+.loading-bg {
+  background: #eee url("img__svg/curve-preloader.svg") no-repeat center center;
+  background-size: 60px 60px;
+}
+
+// 返回
+.backtrack {
+  display: inline-block;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  background: url("img__svg/house.svg") no-repeat center center;
+  background-size: 30px 30px;
+}
+
+.backtrack-plan {
+  height: 70px;
+}
+
+.anima-feat {
+  animation: 0.55s linear 0s alternate none 2 featuresicon;
+  &-loading {
+    animation: 0.55s linear 0s alternate none infinite featuresicon;
+  }
+}
+
+@keyframes featuresicon {
+  50% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rotateU {
+  50% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-main {
+  &-img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.code-img {
+  width: 160px;
+  height: 160px;
+}
+
+.comment-statistics {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 12px;
+  color: #48ADE1;
+}
+
+.icon-peopele {
+  height: 30px;
+  width: 30px;
+  background: url("img__svg/networking.svg") no-repeat center center;
+  background-size: 30px 30px;
+  animation: 3.55s linear 0s alternate none infinite rotateU;
+}
+
+.do-tap-group {
+  position: relative;
+  &::after {
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 18px;
+    height: 24px;
+    width: 24px;
+    background: url("img__svg/tap/tap_1.svg") no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+// 隐私保密
+.secrecy-wrap {
+  border-top: 2px solid salmon;
+  // border-bottom: 2px solid salmon;
+}
+
+.secrecy-color {
+  color: salmon;
+}

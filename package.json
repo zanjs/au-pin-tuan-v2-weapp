@@ -1,0 +1,46 @@
+{
+  "name": "au-pin-tuan",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp watch",
+    "test": "npm run itest",
+    "build": "npm run pre",
+    "clean": "gulp clean",
+    "pre": "gulp build:pre",
+    "itest": "gulp build:test",
+    "doc": "zanapi -i build/model -o .doc/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Julian",
+  "license": "ISC",
+  "dependencies": {
+    "sass-mi": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-plugin-import": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-base64": "^0.1.3",
+    "gulp-clean": "^0.3.2",
+    "gulp-json-editor": "^2.2.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.11",
+    "gutil": "^1.6.4",
+    "zanapi": "^0.0.6"
+  },
+  "homepage": "anla.io"
+}

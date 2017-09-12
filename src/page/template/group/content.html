@@ -1,0 +1,28 @@
+<!--团内容信息-->
+<view class="border-top-ddd_2 border-bottom-ddd_2 padding_10">
+
+  <!--描述-->
+  <!--有更多-->
+  <view wx:if="{{descBtn}}" class="margin-bottom_10" bindtap="tapDesc">
+    <text>{{desc}}</text> <text class="more-desc-btn">显示更多</text>
+  </view>
+  <!--有更多 end-->
+  <view wx:if="{{!descBtn}}" class="margin-bottom_10" bindtap="tapDesc">
+    <text>{{description}}</text>
+  </view>
+  <!--<view class="">
+    显示更多
+  </view>-->
+  <!--描述 end-->
+
+  <!--团图片-->
+  <view class="overflow-y">
+    <block wx:for="{{group.image}}" wx:key="{{index}}">
+      <view class="thumb-box" bindtap="tapImage" data-index="{{index}}">
+        <image class="thumb-img" mode="aspectFill" src="{{item}}?width=100"></image>
+      </view>
+    </block>
+  </view>
+  <!--团图片 end-->
+</view>
+<!--团内容信息 end-->

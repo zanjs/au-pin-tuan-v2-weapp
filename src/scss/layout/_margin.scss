@@ -1,0 +1,107 @@
+$margin:margin!default;
+$margin-x:-x!default;
+$margin-y:-y!default;
+@for $i from 0 through 40 {
+    .#{$margin} {
+        margin: #{$i}px;
+        &#{$margin-x} {
+            &_#{$i} {
+                margin-left:#{$i}px;
+                margin-right:#{$i}px;
+            }
+        }
+        &#{$margin-y} {
+            &_#{$i} {
+                margin-top:#{$i}px;
+                margin-bottom:#{$i}px;
+            }
+        }
+        &-top {
+            &_#{$i} {
+                margin-top:#{$i}px;
+            }
+        }
+        &-right {
+            &_#{$i} {
+                margin-right:#{$i}px;
+            }
+        }
+        &-bottom {
+            &_#{$i} {
+                margin-bottom:#{$i}px;
+            }
+            &_0#{$i} {
+                margin-bottom:-#{$i}px;
+            }
+        }
+        &-left {
+            &_#{$i} {
+                margin-left:#{$i}px;
+            }
+        }
+    }
+}
+
+.#{$margin} {
+    &-auto {
+        margin: auto;
+        &#{$margin-x} {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &#{$margin-y} {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &-top {
+            margin-top: auto;
+        }
+        &-right {
+            margin-right: auto;
+        }
+        &-bottom {
+            margin-bottom: auto;
+        }
+        &-left {
+            margin-left: auto;
+        }
+    }
+}
+
+.#{$margin} {
+    &-rpx {
+        &-left {
+            &_0335 {
+                margin-left: -335rpx;
+            }
+        }
+    }
+}
+
+.#{$margin} {
+    &-top {
+         &_01 {
+            margin-top: -1px;
+        }
+         &_02 {
+            margin-top: -2px;
+        }
+        &_03 {
+            margin-top: -3px;
+        }
+        &_04 {
+            margin-top: -4px;
+        }
+        &_05 {
+            margin-top: -5px;
+        }
+        &_07 {
+            margin-top: -7px;
+        }
+    }
+    &-left {
+        &_27 {
+            margin-left: -27px;
+        }
+    }
+}

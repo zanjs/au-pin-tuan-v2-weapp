@@ -1,0 +1,36 @@
+<view class="padding_10 font_16">
+    {{requiredTitle}}
+</view>
+<view class="padding-x_10 padding-y_5 flex-box">
+    <view class="flex_2">
+        姓名
+    </view>
+    <view class="">
+        <switch checked="{{required_u_name}}" data-name="name"  bindchange="switch1Change"/>
+    </view>
+</view>
+<view class="padding-x_10 padding-y_5 flex-box">
+    <view class="flex_2">
+        联系电话
+    </view>
+    <view class="">
+        <switch checked="{{required_u_phone}}" data-name="phone" bindchange="switch1Change"/>
+    </view>
+</view>
+<view class="padding-x_10 padding-y_5 flex-box">
+    <view class="flex_2">
+        微信号
+    </view>
+    <view class="">
+        <switch checked="{{required_u_wechat}}" data-name="wechat" bindchange="switch1Change"/>
+    </view>
+</view>
+<view class="padding-x_10 padding-y_5 flex-box">
+    <view class="flex_2">
+        收货地址
+    </view>
+    <view class="">
+        <switch checked="{{required_u_address}}" data-name="address" bindchange="switch1Change"/>
+    </view>
+</view>
+<view class="padding_10"></view>

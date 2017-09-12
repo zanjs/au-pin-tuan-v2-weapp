@@ -1,0 +1,37 @@
+// 前缀
+$margin-r-prefix: margin-rpx!default;
+$margin-r-x: -x!default;
+$margin-r-y: -y!default;
+// to 不包括end
+// through 包括end
+@for $i from 1 through 80 {
+  .#{$margin-r-prefix} {
+    // four
+    &_#{$i} {
+      margin: #{$i}rpx;
+    }
+    //  左右
+    &#{$margin-r-x}_#{$i} {
+      margin-left: #{$i}rpx;
+      margin-right: #{$i}rpx;
+    }
+    // 上下
+    &#{$margin-r-y}_#{$i} {
+      margin-top: #{$i}rpx;
+      margin-bottom: #{$i}rpx;
+    }
+    // 上
+    &-top_#{$i} {
+      margin-top: #{$i}rpx;
+    }
+    &-right_#{$i} {
+      margin-right: #{$i}rpx;
+    }
+    &-bottom_#{$i} {
+      margin-bottom: #{$i}rpx;
+    }
+    &-left_#{$i} {
+      margin-left: #{$i}rpx;
+    }
+  }
+}

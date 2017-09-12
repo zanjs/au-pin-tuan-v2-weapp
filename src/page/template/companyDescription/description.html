@@ -1,0 +1,28 @@
+<template name='description'>
+    <!--thumb-->
+      <view class="margin-right_10 align-item-start flex-box  w-rpx_180 height-rpx_180">
+        <image class="align-item-start flex-box  w-rpx_180 height-rpx_180" mode="aspectFit" src="{{imgUrlProxy}}{{item.ShippingCompanyLogo}}"></image>
+      </view>
+      <!--thumb end-->
+      <view class="flex-1">
+        <!--info-->
+        <view wx:if="{{item.WayType==2}}" class="line-height_20">
+          <view>{{item.ShippingCompanyName}}</view>
+          <view><text class="strong">{{LANG.RMB}} {{item.FirstWeightPrice}}</text>{{LANG.First}}{{item.FirstWeight}}{{LANG.UnitKe}}</view>
+          <view><text class="strong">{{LANG.RMB}} {{item.ContinuedWeightPrice}}</text>{{LANG.Continue}}{{item.ContinuedWeight}}{{LANG.UnitKe}}</view>
+        </view>
+
+        <view wx:if="{{item.WayType==4}}" class="line-height_20">
+          <view>{{item.ShippingCompanyName}}</view>
+          <view><text class="strong">{{LANG.RMB}} {{item.ShippingWayDefaultPrice}}</text>{{LANG.First}}{{item.ShippingWayDefaultWeight}}{{LANG.UnitKe}}</view>
+        </view>
+        <!--info end-->
+        <view class="margin-rpx-top_10">
+          <view class="font_12 border_999 display-inline-block padding-rpx-x_10 padding-rpx-y_4 margin-rpx-right_10 margin-rpx-bottom_10" wx:for="{{item.ShortDescriptionArr}}" wx:key="ShortDescription" wx:for-item="ShortDescription">
+            {{ShortDescription}}
+          </view>
+        </view>
+      </view>
+      
+
+</template>

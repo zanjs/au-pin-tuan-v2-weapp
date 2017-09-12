@@ -1,0 +1,28 @@
+//定位位置
+$top-rpx:top-rpx!default;
+$right-rpx:right-rpx!default;
+$bottom-rpx:bottom-rpx!default;
+$left-rpx:left-rpx!default;
+//
+@for $i from 0 through 30 {
+  .#{$top-rpx} {
+    &_#{$i} {
+      top:#{$i}rpx
+    }
+  }
+  .#{$right-rpx} {
+    &_#{$i} {
+      right:#{$i}rpx
+    }
+  }
+  .#{$bottom-rpx} {
+    &_#{$i} {
+      bottom:#{$i}rpx
+    }
+  }
+  .#{$left-rpx} {
+    &_#{$i} {
+      left:#{$i}rpx
+    }
+  }
+}

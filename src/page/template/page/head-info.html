@@ -1,0 +1,31 @@
+<view class="flex-box padding-x_10 padding-y_15 margin-bottom_1">
+  <!--团长头像-->
+  <view class="header-thumb justify-center  text-center flex-box align-item-center" bindtap="tabAvatar">
+    <image class="header-thumb-img" mode="aspectFill" src="{{group.avatar}}"></image>
+    <view class="{{group.open == 1 ? 'bg-primary': 'bg-warn'}} header-thumb-status text-center font_12 padding-y_2">
+      {{group.open == 1 ? '接龙中': '已截至'}}
+    </view>
+  </view>
+  <!--团长头像 end-->
+  <!--团长信息-->
+  <view class="padding-left_10">
+    <view class="strong height_52 border-bottom-ddd_1 flex-box align-item-center">
+      {{group.alias}}
+    </view>
+    <view class="height_27 color-ddd flex-box align-item-end font_12">
+      发起时间: {{group.time ? group.time : group.created_at}}
+    </view>
+  </view>
+  <!--团长信息end-->
+</view>
+<view class="comment-statistics text-center padding_10">
+  <navigator url="/page/group/index" hover-class="navigator-hover">
+    <view class="icon-peopele margin-auto"></view>
+    <view class="padding-top_5">
+      已接龙{{commentsList.length}}人
+    </view>
+    <view class="do-tap-group">
+      当团长
+    </view>
+  </navigator>
+</view>

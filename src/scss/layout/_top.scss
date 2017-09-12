@@ -1,0 +1,12 @@
+.top {
+  @for $i from 0 through 20 {
+    &_#{$i} {
+      top: #{$i}px;
+    }
+  }
+  @for $i from 0 through 20 {
+    &-ge_#{$i} {
+      top: -#{$i}px;
+    }
+  }
+}

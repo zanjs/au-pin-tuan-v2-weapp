@@ -1,0 +1,13 @@
+// line height
+.line-height {
+  @for $i from 0 through 100 {
+    &_#{$i} {
+      line-height: #{$i}px;
+    }
+  }
+  @for $i from 20 through 100 {
+    &-rpx_#{$i} {
+      line-height: #{$i}rpx;
+    }
+  }
+}

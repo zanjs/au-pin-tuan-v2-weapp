@@ -1,0 +1,61 @@
+page {
+  padding-top: 20px;
+}
+
+.svg_1 {
+  width: 80px;
+  height: 80px;
+  background: url("img__svg/boy_1.svg") no-repeat center bottom;
+}
+
+.svg_2 {
+  width: 80px;
+  height: 80px;
+  background: url("img__svg/girl.svg") no-repeat center bottom;
+}
+
+.btn-navigator {}
+
+.dividing-line {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: 3px;
+  background-color: #eee;
+}
+
+.group {
+  &-bgcolor {
+    &_1 {
+      background-color: #42B1E8;
+    }
+    &_2 {
+      background-color: #00AB9A;
+    }
+  }
+  &-color {
+    &_1 {
+      color: #42B1E8;
+    }
+    &_2 {
+      color: #00AB9A;
+    }
+  }
+}
+
+
+.customer-service {
+    // position: fixed;
+    bottom: 5px;
+    // right: 5px;
+    &-icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url("img__svg/customer-service.svg") no-repeat center center;
+        background-size: 100% 100%;
+        border: none;
+        &:after{
+          border: none;
+        }
+    }
+}

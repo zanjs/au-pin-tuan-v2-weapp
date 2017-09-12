@@ -1,0 +1,7 @@
+<view class="overflow-x">
+  <block wx:for="{{imageList}}" wx:key="index">
+    <view class="thumb-box" bindtap="bindUpload" data-id="{{index}}">
+      <image class="thumb-img" mode="aspectFit" src="{{item.src}}"></image>
+    </view>
+  </block>
+</view>

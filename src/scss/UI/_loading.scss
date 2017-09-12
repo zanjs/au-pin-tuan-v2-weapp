@@ -1,0 +1,37 @@
+.loading {
+  &-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+  }
+  &-box {
+    display: flex;
+    width: 100%;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+  }
+  &-img {
+    width: 66px;
+    height: 66px;
+    // animation: spin .3s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

@@ -1,0 +1,27 @@
+<view class="bg-color-fff">
+  <view class="padding_10">
+    <!--输入-->
+    <view class="">
+      <input bindinput="bindKeyInput" value="{{comment}}" class="border-ddd_1 font_12 padding_5" placeholder="{{placeholder}}" />
+    </view>
+    <!--输入 end -->
+    <view class="flex-box padding-top_10">
+      <view class="flex-2">
+        <block wx:if="{{switch}}">
+          <button type="{{group.open == 1 ? 'warn': 'primary'}}" size="mini" hover-class="button-hover" bindtap="tapOpen">
+              {{group.open == 1 ? '截止': '开启'}}
+            </button>
+          <button bindtap="tapEdit" class="margin-left_10" type="defaule" size="mini" hover-class="button-hover">
+                编辑
+          </button>
+          <button bindtap="tapEmail" class="margin-left_10" type="defaule" size="mini" hover-class="button-hover">
+                导出
+          </button>
+        </block>
+      </view>
+      <view class="">
+        <button loading="{{loading}}" disabled="{{loading}}" type="primary" size="mini" hover-class="button-hover" bindtap="submit">{{submitName}}</button>
+      </view>
+    </view>
+  </view>
+</view>

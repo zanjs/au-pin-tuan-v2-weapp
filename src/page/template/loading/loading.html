@@ -1,0 +1,12 @@
+<template name="loading">
+    <!-- <view class="loading-page" wx:if="{{loading}}">
+        <view class="loading-box">
+            <image src="/img/spinning-animals.svg" class="loading-img" />
+        </view>
+    </view> -->
+<view class="backtrack-plan"></view>
+<!--返回首页-->
+<navigator url="/page/index/index" class="backtrack anima-feat{{loading ? '-loading' : ''}}" open-type="redirect" hover-class="navigator-hover">
+</navigator>
+<!--返回首页 end-->
+</template>

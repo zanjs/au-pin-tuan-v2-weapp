@@ -1,0 +1,31 @@
+.error {
+    &-page {
+        height: 100%;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: #fff;
+        // background-color: darkgoldenrod;
+    }
+    &-jc{
+        height: auto;
+        // background-color: red;
+    }
+    &-img {
+        width: 125px;
+        height: 110px;
+    }
+    &-msg,
+    &-text {
+        padding: 20px 0;
+        color: #E5E5E5;
+    }
+    &-refresh {
+        button {
+            border-color: #E5E5E5;
+            color: #E5E5E5;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+<view class="border-bottom-ddd_2"></view>
+
+<block wx:if="{{commentsList}}" wx:key="index" wx:for="{{commentsList}}">
+  <!--报名订单-->
+  <view class="flex-box padding_10 border-bottom-ddd_1">
+    <!--报名头像-->
+    <view class="w_46">
+      <view class="font_12 text-center padding-bottom_5">+{{item.index}}</view>
+      <view class="text-center">
+        <image class="order-thumb-img w_30 height_30 bg-color-eee" mode="aspectFit" src="{{item.avatar}}"></image>
+      </view>
+    </view>
+    <!--报名头像 end-->
+    <!--订单信息-->
+    <view class="flex-2 padding-left_10">
+      <view class="font_12 padding-bottom_5">{{item.alias}}</view>
+      <text wx:if="{{item.comment}}">{{item.comment}}</text>
+      <text wx:if="{{item.product_comment}}">\n{{item.product_comment}}</text>
+    </view>
+    <!--订单信息 end-->
+    <!--订单时间-->
+    <view class="font_12 text-right">
+      <view class="color-ddd ">
+        {{item.time ? item.time : item.created_at}}
+      </view>
+      <block wx:if="{{switch}}">
+        <view class="padding-top_10">
+          <button type="warn" size="mini" data-index="{{index}}" data-alias="{{item.alias}}" data-id="{{item.id}}" hover-class="button-hover" bindtap="tabCommentDel">删除</button>
+        </view>
+      </block>
+    </view>
+    <!--订单时间 end-->
+  </view>
+</block>

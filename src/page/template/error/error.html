@@ -1,0 +1,15 @@
+<template name="error">
+    <view class="height-b_100 flex-box align-text-center justify-center align-item-center bg-color-fff" wx:if="{{error}}">
+        <view>
+            <image class="w-rpx_400 height-rpx_400" src="{{emptyImg}}"  />
+            <view class="color_333 padding_20 font_16 ">
+                {{errorMsg}}
+            </view>
+            <view class="flex-box justify-center margin-top_10 ">
+                <view class="w-rpx_300 height-rpx_70 line-height-rpx_70 align-text-center border-red_1  color-red radius_2 font_16" bindtap="onPullDownRefresh">刷新</view>
+            </view>
+        </view>
+    </view>
+</template>
+
+

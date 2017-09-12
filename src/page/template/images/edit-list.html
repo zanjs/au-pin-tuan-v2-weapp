@@ -1,0 +1,10 @@
+<view class="height_102">
+  <block wx:for="{{imageList}}" wx:key="index">
+    <view class="thumb-box border-box" bindtap="bindUpload" data-id="{{index}}">
+      <image class="thumb-img" mode="aspectFill" src="{{item.src}}"></image>
+      <view wx:if="{{item.delete}}" class="thumb-img-del" catchtap="catchtap">
+        <view class="edit-icon-del" bindtap="bindImgDelete" data-id="{{index}}"></view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,242 @@
+// 颜色库
+.color {
+  &-fff {
+    color: #fff;
+  }
+  &-aaa {
+    color: #aaa;
+  }
+  &-ddd {
+    color: #ddd;
+  }
+  &-eee {
+    color: #eee;
+  }
+  &-blue {
+    color: #68ADFA;
+  }
+  &-ff0 {
+    color: #ff0000;
+  }
+  &-red {
+    color: #FF4D6B;
+  }
+  &-f6 {
+    color: #F6F6F6;
+  }
+  &_8f {
+    color: #8f8f8f;
+  }
+  &-be {
+    color: #bebebe
+  }
+  &-e7 {
+    color: #e7e7e7;
+  }
+  &_2c {
+    color: #2c2c2c;
+  }
+  &_000 {
+    color: #000;
+  }
+  &_333 {
+    color: #333;
+  }
+  &_444 {
+    color: #444;
+  }
+  &_555 {
+    color: #555;
+  }
+  &_666 {
+    color: #666;
+  }
+  &_777 {
+    color: #777;
+  }
+  &_7b {
+    color: #7b7b7b;
+  }
+  &_83 {
+    color: #838383;
+  }
+  &_95 {
+    color: #959595;
+  }
+  &_999 {
+    color: #999;
+  }
+  &_0079FF {
+    color: #0079FF;
+  }
+  &_9f {
+    color: #9f9f9f;
+  }
+  &-ba {
+    color: #bababa;
+  }
+  &-ae {
+    color: #aeaeae;
+  }
+  &_888 {
+    color: #888;
+  }
+  &-fff {
+    color: #fff;
+  }
+  &-aaa {
+    color: #aaa;
+  }
+  &-eee {
+    color: #eee;
+  }
+  &-blue {
+    color: #68ADFA;
+  }
+  &-red {
+    color: #FF4D6B;
+  }
+  &-f6 {
+    color: #F6F6F6;
+  }
+  &_8f {
+    color: #8f8f8f;
+  }
+  &-be {
+    color: #bebebe
+  }
+  &-e7 {
+    color: #e7e7e7;
+  }
+  &_2c {
+    color: #2c2c2c;
+  }
+  &_000 {
+    color: #000;
+  }
+  &_333 {
+    color: #333;
+  }
+  &_444 {
+    color: #444;
+  }
+  &_555 {
+    color: #555;
+  }
+  &_666 {
+    color: #666;
+  }
+  &_777 {
+    color: #777;
+  }
+  &_7b {
+    color: #7b7b7b;
+  }
+  &_83 {
+    color: #838383;
+  }
+  &_95 {
+    color: #959595;
+  }
+  &_888 {
+    color: #888;
+  }
+  &_999 {
+    color: #999;
+  }
+  &_0079FF {
+    color: #0079FF;
+  }
+  &_9f {
+    color: #9f9f9f;
+  }
+  &-ba {
+    color: #bababa;
+  }
+  &-ae {
+    color: #aeaeae;
+  }
+}
+
+// 背景色
+.bg-color {
+  &-fff {
+    background-color: #fff;
+  }
+  &-ea {
+    background-color: #eaeaea;
+  }
+  &-aaa {
+    background-color: #aaa;
+  }
+  &-blue {
+    background-color: #68ADFA;
+  }
+  &-ff0 {
+    background-color: #ff0000;
+  }
+  &-red {
+    background-color: #FF4D6B;
+  }
+  &-f3 {
+    background-color: #f3f3f3;
+  }
+  &-f4 {
+    background-color: #F4F4F4;
+  }
+  &-f6 {
+    background-color: #F6F6F6;
+  }
+  &-fb {
+    background-color: #FBFBFB;
+  }
+  &-f9 {
+    background-color: #F9F9F9;
+  }
+  &-be {
+    background-color: #bebebe;
+  }
+  &-ddd {
+    background: #ddd;
+  }
+  &-eee {
+    background: #eee;
+  }
+  &-e6 {
+    background: #e6e6e6;
+  }
+  &-ef {
+    background: #efefef;
+  }
+  &-f8 {
+    background-color: #f8f8f8;
+  }
+  &-ff4d6b {
+    background: #ff4d6b;
+  }
+  &-ffb900 {
+    background-color: #FFB900;
+  }
+  &_333 {
+    background-color: #333;
+  }
+  &_444 {
+    background-color: #444;
+  }
+  &_555 {
+    background-color: #555;
+  }
+  &_777 {
+    background-color: #777;
+  }
+  &_888 {
+    background-color: #888;
+  }
+  &-rgba {
+    &_000 {
+      &_5 {
+        background: rgba(0, 0, 0, 0.5)
+      }
+    }
+  }
+}

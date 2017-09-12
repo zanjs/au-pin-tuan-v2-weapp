@@ -1,0 +1,27 @@
+//  right
+.border-right {
+  border-right: 1rpx solid #ddd;
+  &-ddd {
+    border-right: 1px solid #ddd;
+  }
+  &-ddd {
+    border-right: 1px solid #ddd;
+  }
+  &-red {
+    border-right: 1px solid #FF4D6B;
+  }
+  &_888 {
+    &_3 {
+      border-right: 3px solid #888;
+    }
+  }
+  &_999 {
+    border-right: 1px solid #999;
+  }
+  &_0079FF {
+    border-right: 1px solid #0079ff;
+    &_3 {
+      border-right: 3px solid #0079ff;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+// height
+.height {
+  &-b {
+    &_100 {
+      height: 100%;
+    }
+  }
+  &-auto {
+    height: auto;
+  }
+  @for $i from 0 through 100 {
+    &_#{$i} {
+      height: #{$i}px;
+    }
+  }
+  &_130 {
+    height: 130px;
+  }
+  &_240 {
+    height: 240px;
+  }
+  &_311 {
+    height: 311px;
+  }
+  &_321 {
+    height: 321px;
+  }
+  &_450 {
+    height: 450px;
+  }
+  &_600 {
+    height: 600px;
+  }
+  &-max {
+    &_18 {
+      max-height: 18px;
+    }
+    &-b {
+      &_100 {
+        max-height: 100%;
+      }
+    }
+  }
+}

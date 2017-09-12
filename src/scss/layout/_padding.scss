@@ -1,0 +1,40 @@
+// pading layout
+// 前缀
+$padding-prefix: padding!default;
+$padding-x: -x!default;
+$padding-y: -y!default;
+// to 不包括end
+// through 包括end
+@for $i from 0 through 50 {
+  .#{$padding-prefix} {
+    // four
+    &_#{$i} {
+      padding: #{$i}px;
+    } //  左右
+    &#{$padding-x}_#{$i} {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    } // 上下
+    &#{$padding-y}_#{$i} {
+      padding-top: #{$i}px;
+      padding-bottom: #{$i}px;
+    }
+    // 左
+    &-left_#{$i} {
+      padding-left: #{$i}px;
+    } // 右
+    &-right_#{$i} {
+      padding-right: #{$i}px;
+    } // 上
+    &-top_#{$i} {
+      padding-top: #{$i}px;
+    } // 下
+    &-bottom_#{$i} {
+      padding-bottom: #{$i}px;
+    }
+  }
+}
+
+.padding-rpx-left_80{
+  padding-left: 80rpx;
+}

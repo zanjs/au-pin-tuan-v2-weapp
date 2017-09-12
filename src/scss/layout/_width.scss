@@ -1,0 +1,66 @@
+// w
+.w {
+  &-auto {
+    width: auto;
+  }
+  &-b {
+    &_100 {
+      width: 100%;
+    }
+    &_22 {
+      width: 22%;
+    }
+    &_25 {
+      width: 25%;
+    }
+    &_50 {
+      width: 50%;
+    }
+    &_4 {
+      width: 4%;
+    }
+  }
+  @for $i from 0 through 350 {
+    &_#{$i} {
+      width: #{$i}px;
+    }
+  }
+  @for $i from 10 through 750 {
+    &-rpx_#{$i} {
+      width: #{$i}rpx;
+    }
+  }
+}
+
+//  w min
+.w-min {
+  @for $i from 0 through 350 {
+    &_#{$i} {
+      min-width: #{$i}px;
+    }
+  }
+  @for $i from 0 through 750 {
+    &-rpx_#{$i} {
+      min-width: #{$i}rpx;
+    }
+  }
+}
+
+// w max
+.w-max {
+  @for $i from 0 through 350 {
+    &_#{$i} {
+      max-width: #{$i}px;
+    }
+  }
+  @for $i from 0 through 750 {
+    &-rpx_#{$i} {
+      max-width: #{$i}rpx;
+    }
+  }
+  &-b {
+    &_100 {
+      max-width: 100%;
+    }
+  }
+}

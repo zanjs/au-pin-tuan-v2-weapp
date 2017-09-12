@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "page/index/index",
+    "page/initiate/initiate",
+    "page/comment/comment",
+    "page/product/add/add",
+    "page/product/show/show",
+    "page/product/edit/edit",
+    "page/placard/add/add",
+    "page/placard/show/show",
+    "page/placard/edit/edit",
+    "page/help/help",
+    "page/group/index",
+    "page/email/email"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "一键接龙",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#EEEEEE",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "networkTimeout": {
+    "request": 9999,
+    "connectSocket": 9999,
+    "uploadFile": 9999,
+    "downloadFile": 9999
+  },
+  "debug": true
+}

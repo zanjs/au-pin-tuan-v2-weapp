@@ -1,0 +1,27 @@
+<include src="../../template/page/head-info.html" />
+
+<!--团内容信息-->
+<include src="../../template/group/content.html" />
+<!--团内容信息 end-->
+
+<!--团购的商品列表-->
+<block wx:for="{{products}}" wx:key="index">
+  <include src="product.html" />
+</block>
+<!--团购的商品列表 end-->
+
+<view wx:if="{{totalPrice}}" class="padding_10">
+  <view class="flex-2">
+    <text class="">总价: </text>
+    <text class="color-red font_16">{{currencyCode}}{{totalPrice}}</text>
+  </view>
+</view>
+
+<include src="../../template/group/form.html" />
+
+
+<include src="../../template/group/comments.html" />
+
+<include src="../../template/group/code.html" />
+
+<include src="../../template/group/footer.html" />

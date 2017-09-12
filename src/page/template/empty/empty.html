@@ -1,0 +1,13 @@
+<template name='empty'>
+    <view class="w-b_100% height-b_100 flex-box align-item-center justify-center" wx:if="{{emptyShow}}">
+        <view class="align-text-center">
+            <image class="w-rpx_400 height-rpx_400" src="{{emptyImg}}"></image>
+            <view class="color_333 padding_20 align-text-center font_16">{{emptyTxt}}</view>
+
+             <view class="flex-box justify-center margin-top_10 ">
+                     <view wx:if="{{emptyBtn.length>0}}" bindtap="emptyNavigator" class="w-rpx_300 font_16 height-rpx_70 line-height-rpx_70 align-text-center border-red_1  color-red radius_2">{{emptyBtn}}</view>
+            </view>
+
+        </view>
+    </view>
+</template>

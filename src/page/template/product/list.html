@@ -1,0 +1,34 @@
+<!--商品名称-->
+<view class="flex-box border-bottom-ddd_1 line-height_30 padding-y_5">
+  <view class="product-name">
+    商品名称:
+  </view>
+  <view class="flex_2">
+    <input disabled="{{item.id}}" bindinput="bindProduct" confirm-type="done" data-name="name" data-index="{{index}}" value="{{item.name}}" class="height_30 line-height_30 font_14" placeholder="商品描述，单位信息" />
+  </view>
+</view>
+<!--商品名称 end-->
+
+<!--商品价格-->
+<view class="flex-box border-bottom-ddd_1 line-height_30 padding-y_5">
+  <view class="product-name">
+    价格:AUD$
+  </view>
+  <view class="flex_2">
+    <input disabled="{{item.id}}" bindinput="bindProduct" type="digit" data-name="price" data-index="{{index}}" value="{{item.price}}" class="height_30 line-height_30" />
+  </view>
+</view>
+<!--商品价格 end-->
+<!--商品数量-->
+<view class="flex-box border-bottom-ddd_1 line-height_30 padding-y_5">
+  <view class="product-name">
+    商品数量：
+  </view>
+  <view class="flex_2">
+    <input disabled="{{item.id}}" bindinput="bindProduct" type="digit" data-name="quantity" data-index="{{index}}" value="{{item.quantity}}" placeholder="不填写为无限量" />
+  </view>
+</view>
+<!--商品数量 end-->
+<view wx:if="{{!item.id}}" class="padding-top_10 text-right">
+  <button bindtap="bindPorudctDel" data-index="{{index}}" type="warn" size="mini" hover-class="button-hover">删除此商品</button>
+</view>

@@ -1,0 +1,22 @@
+<view class="padding-bottom_10">
+  <input value="{{comment}}" bindinput="bindKeyInput" class="border-ddd_1 font_12 padding_5" placeholder="{{commentPlaceholder}}" />
+</view>
+<block wx:if="{{secrecy}}">
+  <view class="secrecy-wrap">
+    <view class="padding-y_10 secrecy-color" bindtap="tabSecrecy">
+      以下信息只有团长可以看到 点击我可以收起在分享哦
+    </view>
+    <view wx:if="{{required_u_phone}}" class="padding-bottom_10">
+      <input value="{{phone}}" name="phone" type="number" bindinput="bindKeyInputPhone" class="border-ddd_1 font_12 padding_5" placeholder="手机号 方便团长联系" />
+    </view>
+    <view wx:if="{{required_u_name}}" class="padding-bottom_10">
+      <input value="{{name}}" name="name" bindinput="bindKeyInputName" class="border-ddd_1 font_12 padding_5" placeholder="姓名" />
+    </view>
+    <view wx:if="{{required_u_wechat}}" class="padding-bottom_10">
+      <input value="{{wechat}}" name="wechat" bindinput="bindKeyInputWechat" class="border-ddd_1 font_12 padding_5" placeholder="微信号" />
+    </view>
+    <view wx:if="{{required_u_address}}" class="padding-bottom_10">
+      <input value="{{address}}" name="address" bindinput="bindKeyInputAddress" class="border-ddd_1 font_12 padding_5" placeholder="收货地址" />
+    </view>
+  </view>
+</block>

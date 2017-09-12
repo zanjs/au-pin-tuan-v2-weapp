@@ -1,0 +1,12 @@
+<view class="padding_10">
+  <input bindinput="bindEmailInput" class="email-input padding_5" placeholder="要导出到哪个邮箱呢?" value="{{email}}" auto-focus/>
+</view>
+<view class="padding_10">
+  请输入您常用的邮箱 来查看接龙报名信息
+</view>
+
+<!--发起接龙按钮-->
+<view class="fixed bottom">
+  <button loading="{{loading}}" type="primary" bindtap="submit" size="default" hover-class="button-hover"> 导出 </button>
+</view>
+<!--发起接龙按钮 end-->

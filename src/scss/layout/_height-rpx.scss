@@ -1,0 +1,64 @@
+// height rpx
+.height-rpx {
+  @for $i from 0 through 161 {
+    &_#{$i} {
+      height: #{$i}rpx;
+    }
+  }
+  &_180 {
+    height: 180rpx;
+  }
+  &_220 {
+    height: 220rpx;
+  }
+  &_240 {
+    height: 240rpx;
+  }
+  &_300 {
+    height: 300rpx;
+  }
+  &_400 {
+    height: 400rpx;
+  }
+  &_600 {
+    height: 600rpx;
+  }
+  &_622 {
+    height: 622rpx;
+  }
+  &-max {
+    &_72 {
+      max-height: 72rpx;
+    }
+    &_80 {
+      max-height: 80rpx;
+    }
+    &_350 {
+      max-height: 350rpx;
+    }
+    &_450 {
+      max-height: 450rpx;
+    }
+    &_18 {
+      max-height: 18px;
+    }
+    &-b {
+      &_100 {
+        max-height: 100%;
+      }
+    }
+    &-rpx {
+      &-max {
+        &_72 {
+          max-height: 72rpx;
+        }
+        &_350 {
+          max-height: 350rpx;
+        }
+        &_450 {
+          max-height: 450rpx;
+        }
+      }
+    }
+  }
+}

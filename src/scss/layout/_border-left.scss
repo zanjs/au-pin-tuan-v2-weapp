@@ -1,0 +1,15 @@
+// left
+.border-left {
+  border-left: 1rpx solid #ddd;
+  &-red {
+    &_2 {
+      border-left: 2px solid #FF4D6B;
+    }
+    &_4 {
+      border-left: 4px solid #FF4D6B;
+    }
+  }
+  &-ccc {
+    border-left: 1rpx solid #ccc;
+  }
+}

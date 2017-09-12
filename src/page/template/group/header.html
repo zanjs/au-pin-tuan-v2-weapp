@@ -1,0 +1,12 @@
+<view class="padding_10">
+  <view class="font_16 color_000 margin-bottom_10">
+    {{column}}
+  </view>
+  <view class="margin-bottom_10">
+    <input bindinput="bindTitle" value="{{title}}" class="border-ddd_1 line-height_26 height_26 padding_6   bg-color-eee" placeholder="{{placeholderTitle}}" />
+  </view>
+  <view class="margin-bottom_10">
+    <textarea bindinput="bindTextAreaBlur" value="{{description}}" class="border-ddd_1 padding_6 w-b_100 border-box bg-color-eee" maxlength="-1" placeholder="{{placeholder}}" />
+  </view>
+  <include src="../images/edit-list.html" />
+</view>
