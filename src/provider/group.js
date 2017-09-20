@@ -27,6 +27,7 @@ import GroupMiddleware from '../middleware/group'
 import Status from '../data/status'
 // fn
 import GroupFn from '../fn/group'
+import ImageFn from '../fn/image'
 
 export default {
   editInit() {
@@ -57,7 +58,7 @@ export default {
     const description = data.description
     const products = data.products
     const typeId = data.type_id
-    let image = data.image
+    let image = ImageFn.submitImage(data.imageList)
 
     if (!image.length) {
       image = ''
@@ -85,7 +86,6 @@ export default {
       Print.Log(id)
 
       Istorage.remove(Istorage.description)
-      Istorage.remove(Istorage.image)
       Istorage.remove(Istorage.imageList)
 
       if (typeId === 1) {

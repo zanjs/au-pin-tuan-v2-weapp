@@ -1,5 +1,6 @@
 // stack
 import Stack from '../mwx/stack'
+import ImageFn from '../fn/image'
 
 export default {
   update() {
@@ -10,29 +11,21 @@ export default {
     const products = data.products
     const id = data.group.id
     const typeId = data.type_id
-    const image = data.image
-    let arr = []
-    const len = image.length
-    let i
-    for (i = 0; i < len; i += 1) {
-      const item = image[i]
-      if (item) {
-        arr.push(item)
-      }
+    let image = ImageFn.submitImage(data.imageList)
+
+
+    if (!image.length) {
+      image = ''
     }
 
-    if (!arr.length) {
-      arr = ''
-    }
-
-    arr = arr.toString()
+    image = image.toString()
 
     const obj = {
       id,
       title,
       description,
       products,
-      image: arr,
+      image,
       type_id: typeId,
       required_u_name: data.required_u_name || 0,
       required_u_phone: data.required_u_phone || 0,

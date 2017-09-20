@@ -4,15 +4,12 @@ import Placard from '../../../controller/placard'
 Page({
   data: {
     description: '',
-    image: [],
     column: '编辑报名信息，分享到群，愉快的接龙吧！',
     placeholder: '1月12日， Opera House，聚会活动….',
     placeholderTitle: '一句话标题',
     submitName: '发起接龙',
     imageLoad: true,
-    imageList: [{
-      src: '',
-    }],
+    imageList: [{}, {}, {}, {}],
   },
   onLoad() {
     Placard.onLoad()

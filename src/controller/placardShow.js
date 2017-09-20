@@ -106,7 +106,7 @@ export default {
   },
   tapImage(e) {
     const vm = Stack.page()
-    const images = vm.data.group.image || []
+    const images = vm.data.image || []
     const index = Event.dataset(e, 'index')
     Print.Log(images)
     Image.previewImage(images[index], images)

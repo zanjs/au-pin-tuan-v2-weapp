@@ -22,7 +22,7 @@ export default {
     const imgIndex = Event.dataset(e, 'id')
     const data = vm.data
     const imageList = data.imageList
-    const image = data.image
+
 
     co(function* c() {
       const filepath = yield WXimage.chooseImage()
@@ -33,7 +33,8 @@ export default {
       }
       Print.Log(filepath)
       Print.Log(imgIndex)
-      imageList[imgIndex].src = filepath
+      imageList[imgIndex].wxfile = filepath
+      imageList[imgIndex].loading = true
 
       vm.setData({
         imageList,
@@ -43,46 +44,39 @@ export default {
       const imgPath = yield Image.store(filepath)
 
       Print.Log(imgPath)
-
-      imageList[imgIndex].src = imgPath.src
-      imageList[imgIndex].delete = true
-
-      image[imgIndex] = imgPath.path
-
-      const addList = {
-        src: '',
+      if (!imgPath) {
+        return
       }
 
-      imageList.push(addList)
+      imageList[imgIndex].path = imgPath.path
+      imageList[imgIndex].src = imgPath.src
+      imageList[imgIndex].loading = false
 
       vm.setData({
         imageList,
-        image,
         loading: false,
       })
 
-      Istorage.set(Istorage.image, image)
       Istorage.set(Istorage.imageList, imageList)
     })
   },
   destroy(e) {
     const vm = Stack.page()
     const imgIndex = Event.dataset(e, 'id')
+    const imgPath = Event.dataset(e, 'path')
     const userInfo = Istorage.get(Istorage.userInfo)
     const data = vm.data
     const imageList = data.imageList
-    const image = data.image
-    const delImage = data.image[imgIndex]
+    const delImage = imgPath
 
-    image[imgIndex] = ''
     imageList[imgIndex].src = ''
-    imageList[imgIndex].delete = false
+    imageList[imgIndex].path = ''
+    imageList[imgIndex].loading = false
+    imageList[imgIndex].wxfile = ''
     vm.setData({
       imageList,
-      image,
     })
 
-    Istorage.set(Istorage.image, image)
     Istorage.set(Istorage.imageList, imageList)
 
     const obj = {

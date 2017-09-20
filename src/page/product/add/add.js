@@ -12,9 +12,7 @@ Page({
     submitName: '发起接龙',
     requiredTitle: '报名人必填信息,默认无需填写',
     imageLoad: true,
-    imageList: [{
-      src: '',
-    }],
+    imageList: [{}, {}, {}, {}],
   },
   onLoad() {
     Product.onLoad()
@@ -50,18 +48,6 @@ Page({
     Product.switch1Change(e)
   },
   catchtap() {},
-  // /**
-  //  * 分享
-  //  * @param {any} page
-  //  * @returns
-  //  */
-  // onShareAppMessage() {
-  //   return {
-  //     'title': '谁是第一个发起者，搬个小板凳赶快上车咯🛵🛵🛵',
-  //     'desc': 'desc',
-  //     'path': '/page/product/add/add',
-  //   }
-  // },
   onReady() {},
   onHide() {},
   onUnload() {},
